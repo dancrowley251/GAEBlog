@@ -8,7 +8,7 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "start": "npm run serve",
+    "start": "npm run build && npm run serve",
     "build": "npm run build-ts",
     "build-ts": "tsc",
     "serve": "node dist/server.js",
