@@ -6,7 +6,7 @@ const app: express.Application = express();
 app.set('port', process.env.PORT || 8080);
 
 app.get('/', (req, res) => {
-  res.send('🎉 Hello TypeScript! 🎉');
+  res.send('The Google App Engine Blog!');
 });
 
 export default app;
