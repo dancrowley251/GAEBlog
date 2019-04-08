@@ -1,6 +1,10 @@
 import express from 'express';
+import helmet from 'helmet';
 
 const app: express.Application = express();
+
+// Use helmet for security
+app.use(helmet());
 
 // Express configuration
 app.set('port', process.env.PORT || 8080);
