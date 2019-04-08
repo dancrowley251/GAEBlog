@@ -8,12 +8,13 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "start": "npm run build && npm run serve",
+    "start": "npm run serve",
     "build": "npm run build-ts",
     "build-ts": "tsc",
-    "serve": "node dist/server.js",
+    "serve": "node index.js",
     "test": "repo-tools test app -- dist/server.js",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "gcp-build": "npm run build",
     "deploy": "gcloud app deploy"
   },
   "dependencies": {
