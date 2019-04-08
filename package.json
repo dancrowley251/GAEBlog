@@ -1,21 +1,19 @@
 {
-  "name": "appengine-typescript",
-  "description": "An example TypeScript app running on Google App Engine.",
+  "name": "google-app-engine-blog",
+  "description": "A blog server app running on Google App Engine.",
   "version": "0.0.1",
-  "private": true,
   "license": "Apache Version 2.0",
-  "author": "Google Inc.",
+  "author": "Dan Crowley",
   "engines": {
     "node": ">=8.0.0"
   },
   "scripts": {
-    "prepare": "npm run gcp-build",
-    "pretest": "npm run gcp-build",
-    "test": "repo-tools test app -- index.js",
-    "posttest": "npm run lint",
-    "lint": "tslint -p .",
-    "start": "node ./index.js",
-    "gcp-build": "tsc -p .",
+    "start": "npm run serve",
+    "build": "npm run build-ts",
+    "build-ts": "tsc",
+    "serve": "node dist/server.js",
+    "test": "repo-tools test app -- dist/server.js",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
     "deploy": "gcloud app deploy"
   },
   "dependencies": {
