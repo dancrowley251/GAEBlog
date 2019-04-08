@@ -11,7 +11,7 @@
     "start": "npm run serve",
     "build": "npm run build-ts",
     "build-ts": "tsc",
-    "serve": "node index.js",
+    "serve": "node dist/server.js",
     "test": "repo-tools test app -- dist/server.js",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "gcp-build": "npm run build",
