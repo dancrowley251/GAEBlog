@@ -19,7 +19,7 @@ Run a blog on Google App Engine built with NodeJS and Express. Write it with Typ
 7 Mirror Github repo with GCP - https://cloud.google.com/source-repositories/docs/mirroring-a-github-repository
 8 Create a build trigger - https://cloud.google.com/cloud-build/docs/running-builds/automate-builds
 9 Make a change
-10 Add the change and commit - git add .;git commit -m "blah, blah, blah"
+10 Add the change, commit, and push to Github - git add .;git commit -m "blah, blah, blah";git push origin master
 11 Test on GCP
 
 The github repo is synced with Google Source repository and there is a trigger to automate the deployment.
