@@ -1,6 +1,6 @@
 {
   "name": "google-app-engine-blog",
-  "description": "A blog server app running on Google App Engine.",
+  "description": "A NodeJS/Express blog server app running on Google App Engine.",
   "version": "0.0.1",
   "license": "Apache Version 2.0",
   "author": "Dan Crowley",
