@@ -26,10 +26,10 @@ The github repo is synced with Google Source repository and there is a trigger t
 
 ### References:
 
-[NodeJS (node)](https://nodejs.org/en/about/)
-[Express](https://expressjs.com/)
-[Typescript](https://www.typescriptlang.org/)
-[Google App Engine (GAE)](https://cloud.google.com/appengine/)
-[Running Node on GAE](https://cloud.google.com/nodejs/)
-[Mirroring a Github Repo to Google Cloud Platform (GCP)](https://cloud.google.com/source-repositories/docs/mirroring-a-github-repository)
-[Running a Custom Build Script for NodeJS on GCP](https://cloud.google.com/appengine/docs/standard/nodejs/running-custom-build-step)
+- [NodeJS (node)](https://nodejs.org/en/about/)
+- [Express](https://expressjs.com/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Google App Engine (GAE)](https://cloud.google.com/appengine/)
+- [Running Node on GAE](https://cloud.google.com/nodejs/)
+- [Mirroring a Github Repo to Google Cloud Platform (GCP)](https://cloud.google.com/source-repositories/docs/mirroring-a-github-repository)
+- [Running a Custom Build Script for NodeJS on GCP](https://cloud.google.com/appengine/docs/standard/nodejs/running-custom-build-step)
