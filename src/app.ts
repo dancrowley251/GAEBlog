@@ -2,6 +2,7 @@ import express from 'express';
 import helmet from 'helmet';
 import path from 'path';
 import handlebars from 'express-handlebars';
+import compression from 'compression';
 
 import { router } from './router';
 
@@ -28,5 +29,6 @@ app.engine(
 );
 app.set('views', path.join(__dirname, '/../views'));
 app.set('view engine', 'hbs');
+app.use(compression());
 
 export default app;
