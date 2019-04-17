@@ -1,13 +1,12 @@
 import { Request, Response } from 'express';
 
 /**
- * GET /
- * Home page.
+ * Page Not Found - add wild card to end of routes
  */
 const controller = (req: Request, res: Response) => {
-  res.render('home', {
-    title: 'Home'
-  });
+    res.status(404).render('not-found', {
+        title: 'Page Not Found'
+    });
 };
 
 export default controller;

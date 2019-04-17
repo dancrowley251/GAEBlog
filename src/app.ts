@@ -11,11 +11,11 @@ const app: express.Application = express();
 // Use helmet for security
 app.use(helmet());
 
+// configure serving client as static files
+app.use(express.static(path.join(__dirname, '/../public/')));
+
 // register app routes
 app.use(router);
-
-// configure serving client as static files
-app.use(express.static(path.join(__dirname, '/../public')));
 
 // Express configuration
 app.set('port', process.env.PORT || 8080);
