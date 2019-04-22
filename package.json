@@ -14,13 +14,17 @@
     "build-ts": "tsc",
     "build-sass": "node-sass src/css/main.scss public/css/main.css",
     "serve": "node dist/server.js",
-    "test": "repo-tools test app -- dist/server.js",
+    "test": "jest --watch",
+    "repo-test": "repo-tools test app -- dist/server.js",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "gcp-build": "npm run build",
     "deploy": "gcloud app deploy",
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
     "watch-ts": "tsc -w",
     "watch-node": "nodemon dist/server.js -e js,hbs"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
@@ -37,11 +41,17 @@
     "@types/express": "^4.16.0",
     "@types/express-handlebars": "0.0.30",
     "@types/helmet": "0.0.43",
+    "@types/jest": "^24.0.11",
     "@types/shelljs": "^0.8.4",
+    "@types/supertest": "^2.0.7",
     "concurrently": "^4.1.0",
+    "jest": "^24.7.1",
     "node-sass": "^4.11.0",
     "nodemon": "^1.18.11",
+    "prettier": "^1.17.0",
     "shelljs": "^0.8.3",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.0.2",
     "ts-node": "^8.0.3",
     "tslint": "^5.11.0",
     "typescript": "^3.0.1"
