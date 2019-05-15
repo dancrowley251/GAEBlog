@@ -46,7 +46,7 @@
     "@types/supertest": "^2.0.7",
     "concurrently": "^4.1.0",
     "jest": "^24.7.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "nodemon": "^1.18.11",
     "prettier": "^1.17.0",
     "shelljs": "^0.8.3",
