@@ -36,7 +36,7 @@
     "popper.js": "^1.15.0"
   },
   "devDependencies": {
-    "@google-cloud/nodejs-repo-tools": "^3.0.0",
+    "@google-cloud/nodejs-repo-tools": "^3.3.0",
     "@types/compression": "0.0.36",
     "@types/express": "^4.16.0",
     "@types/express-handlebars": "0.0.30",
